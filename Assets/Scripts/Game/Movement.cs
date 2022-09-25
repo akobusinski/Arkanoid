@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
     public GameObject ball;
-    public float speed = 10f;
+    public float speed = 15f;
     [SerializeField] private float BallSpawnCooldown = 0f;
     [SerializeField] private float BallSpawnCooldown_ = 0.1f;
     void Update() {
