@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BallDespawn : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision) {
+    void OnCollisionEnter2D(Collision2D collision) {
         Debug.Log("Collision");
-        Destroy(gameObject);
+        Destroy(collision.gameObject);
     }
 }
