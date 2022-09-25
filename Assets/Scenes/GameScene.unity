@@ -912,7 +912,7 @@ MonoBehaviour:
   ball: {fileID: 8807490025367668243, guid: f2e14965e09368a4688d14508c003590, type: 3}
   speed: 15
   BallSpawnCooldown: 0
-  BallSpawnCooldown_: 0.1
+  BallSpawnCooldown_: 0.2
 --- !u!1 &1229425865
 GameObject:
   m_ObjectHideFlags: 0

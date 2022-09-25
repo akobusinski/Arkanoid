@@ -26,4 +26,7 @@ public class Movement : MonoBehaviour {
             BallSpawnCooldown = BallSpawnCooldown_;
         }
     }
+    void OnCollisionEnter2D(Collision2D collision) {
+        collision.collider.attachedRigidbody.AddTorque(Random.Range(-100f, 100f));
+    }
 }
