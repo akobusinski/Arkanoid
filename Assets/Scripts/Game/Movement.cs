@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour {
         if (Input.GetKey(KeyCode.Space)) {
             BallSpawnCooldown -= Time.deltaTime;
             if (0 >= BallSpawnCooldown) {
-                Instantiate(ball, transform.position + new Vector3(0f, 1f, 0f), Quaternion.Euler(0f, 0f, 0f));
+                Manager.Instance.balls.Add(Instantiate<GameObject>(ball, transform.position + new Vector3(0f, 1f, 0f), Quaternion.Euler(0f, 0f, 0f)));
                 BallSpawnCooldown = BallSpawnCooldown_;
             }
         }
@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space)) {
             BallSpawnCooldown = BallSpawnCooldown_;
         }
+        transform.position = new Vector2(Mathf.Max(Mathf.Min(transform.position.x, 4.6f), -4.5f), transform.position.y);
     }
     void OnCollisionEnter2D(Collision2D collision) {
         collision.collider.attachedRigidbody.AddTorque(Random.Range(-100f, 100f));
