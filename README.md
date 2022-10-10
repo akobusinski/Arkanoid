@@ -14,6 +14,6 @@
   - [ ] Better Graphics
 
 ## Bugs
-  - [ ] Canvas doesnt scale well
-  - [ ] Blocks spawn outside of the screen after building
-  - [ ] Platform can go outside the screen
+  - [x] Canvas doesnt scale well
+  - [x] Blocks spawn outside of the screen after building
+  - [x] Platform can go outside the screen
